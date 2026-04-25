@@ -1,0 +1,119 @@
+# =============================================================================
+# DATEN & MODELLE — die grossen Files, die nicht ins Git gehoeren
+# =============================================================================
+# CIFAR-10 wird von torchvision auto-downloaded -> kein Grund zu commiten
+data/
+*.tar.gz
+*.tar
+cifar-10-batches-py/
+
+# Trainierte Modelle (kann jeder aus dem Notebook reproduzieren)
+*.pth
+*.pt
+*.ckpt
+*.h5
+*.pkl
+*.pickle
+*.bin
+*.safetensors
+
+# =============================================================================
+# JUPYTER
+# =============================================================================
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Outputs aus Notebooks (nur wenn du Notebooks ohne Output committen willst)
+# *.ipynb     # auskommentiert lassen, wir committen Notebooks normal
+
+# =============================================================================
+# PYTHON
+# =============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+MANIFEST
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# pip
+pip-log.txt
+pip-delete-this-directory.txt
+
+# =============================================================================
+# IDE / EDITOR
+# =============================================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# =============================================================================
+# OS
+# =============================================================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# =============================================================================
+# LOGS & TEMP
+# =============================================================================
+*.log
+*.tmp
+*.temp
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# =============================================================================
+# ML EXPERIMENT TRACKING
+# =============================================================================
+wandb/
+mlruns/
+runs/
+lightning_logs/
+tb_logs/
+
+# =============================================================================
+# JUPYTER LAB SETTINGS
+# =============================================================================
+.jupyter/
+
+# =============================================================================
+# ENVIRONMENT VARIABLES & SECRETS
+# =============================================================================
+.env
+.env.local
+.env.*.local
+secrets.json
+credentials.json
